@@ -1,0 +1,50 @@
+body {
+    background-color: #fbb782;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* question on this and */
+    margin: 0;
+    padding: 0;     
+}
+
+header{
+    background-color: #A52403;
+    /* help with this */
+    background-image: "/Users/ahlam/Desktop/frontend-projects/menu-project/images/drivethruopen.jpg";   
+    color:white;
+    text-align: center;
+    font-weight:bolder;
+    
+    /* and this (how does padding work here)*/
+    padding: 10px 100px;
+
+}
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color:white;
+    padding: 10%;    /* padding inbetween words */
+}
+
+#drivethruopen {
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+}
+
+.images{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* 
+content - width.height
+padding
+border
+margin
+*/
