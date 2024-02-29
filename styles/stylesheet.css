@@ -37,15 +37,18 @@ nav ul li a{
 
 .container{
     display:grid;
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: repeat(6,auto);
     grid-template-columns: repeat(3,1fr);
-    gap:40px;
+    gap:20px;
 }
 
 #Menu{
     text-align: center;
     grid-column: 2/3;
     grid-row:1/2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 40px;
 }
 
 #productOne{
@@ -71,19 +74,55 @@ nav ul li a{
 #productFive{
     grid-column: 3/4;
     grid-row:4/5;
+    
 }
 .product{
     justify-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 900;
 }
 .product img{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+
 }
-/* 
-content - width.height
-padding
-border
-margin
-*/
 
+.container #drinkstitle{
+    grid-column: span 5;
+    justify-self: center;
+    align-self:baseline;
 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.container #drinks1{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: center;
+}
+.container #drinks2{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: start;
+}
+.container #drinks3{
+    grid-column: 3/4;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: center;
+}
+
+.container .drinks ul li{
+    list-style-type: none;
+}
+.container .drinks{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
