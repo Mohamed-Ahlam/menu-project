@@ -2,47 +2,43 @@ body {
     background-color: #fbb782;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-    /* question on this and */
+    /* so this affects the whole page */
     margin: 0;
     padding: 0;     
 }
 
 header{
     background-color: #A52403;
-    /* help with this */
     color:rgb(0, 0, 0);
     text-align: center;
     font-weight:bolder;
     
-    /* and this (how does padding work here???)*/
+    /* this changes how big you want the header to be*/
     padding: 50px 50px;
 
+    /* you need to add a url u cant do photo from your laptop*/
     background-image: url("https://secure.caes.uga.edu/news/multimedia/images/5668/takeoutfoodLR.jpg");
 }
 
 header h1{
     background: #fbb782;
 }
+
 h1 {
     max-inline-size: 20%;
   }
+
 
 nav ul li{
     display: inline;
     list-style-type: none;
 }
-
+  /* affetcs the individual <a> and adds color and padidng to them while the above affects the list as a while */
 nav ul li a{
     color:white;
     padding: 10%;    /* padding inbetween words */
 }
-
-#drivethruopen {
-    width: 100px;
-    height: 100px;
-    /* border-radius: 50%; */
-}
-
+  /* creates a 6x3 grid and the repeat() makes the same size grid # amnt of times,fr means how big u want each grid space to be */
 .container{
     display:grid;
     grid-template-rows: repeat(6,auto);
@@ -85,11 +81,14 @@ nav ul li a{
     
 }
 .product{
+    /* justify makes the image + wording come to the middle. why we use self here and not justify-content? */
     justify-self: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: 900;
 }
+
+/* affects specifically the images with .products class */
 .product img{
     width: 400px;
     height: 200px;
@@ -98,9 +97,15 @@ nav ul li a{
 }
 
 #drinkstitle{
+    /* span bascially saying go from 1-5 collums  */
     grid-column: span 5;
     justify-self: center;
     align-self:center;
+
+    /* justify - goes left to right
+        align - goes up to down
+        "stretch" is default
+        self- means product itself and content means all in one class */
 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
@@ -126,9 +131,12 @@ nav ul li a{
     align-self: stretch;
 }
 
+/* style type means if u want bullet points or not */
 .drinks ul li{
     list-style-type: none;
 }
+
+/* how can i make a whole row in a grid one color?? */
 .drinks{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
