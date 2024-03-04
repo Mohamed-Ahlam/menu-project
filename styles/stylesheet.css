@@ -26,8 +26,7 @@ header h1{
 
 h1 {
     max-inline-size: 20%;
-  }
-
+}
 
 nav ul li{
     display: inline;
@@ -136,7 +135,7 @@ nav ul li a{
     list-style-type: none;
 }
 
-/* how can i make a whole row in a grid one color?? */
+/* how can i make a whole row in a grid one color? */
 .drinks{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
